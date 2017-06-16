@@ -29,7 +29,7 @@ class Route < ActiveRecord::Base
       drivers = []
       bus.drivers.each do |driver|
         drivers << driver.name
-      end
+      end 
       all_drivers[bus.id] = drivers
     end
 
