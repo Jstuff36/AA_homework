@@ -51,6 +51,31 @@
         </li>
       </ol>
     </figure>
+    <section id="reviews">
+      Recipe Review
+      <form action="/reviews" method="post">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name">
+        <br>
+        <label for="rating">Rating</label>
+        1<input id="rating" type="radio" name="rating" value="1" checked>
+        2<input id="rating" type="radio" name="rating" value="2">
+        3<input id="rating" type="radio" name="rating" value="3">
+        4<input id="rating" type="radio" name="rating" value="4">
+        5<input id="rating" type="radio" name="rating" value="5">
+        <br>
+        <label for="Cooking Expertise">Cooking Expertise</label>
+        <select name="Cooking Expertise">
+          <option value="Select Cooking Expertise" disabled selected>
+            Select Cooking Expertise
+          </option>
+          <option value = "Sometimes Cook">Sometimes Cook</option>
+          <option value = "Cook Everyday">Cook Everyday</option>
+          <option value = "Cooking is a Hobby">Cooking is a Hobby</option>
+          <option value = "Professional Chef">Professional Chef</option>
+        </select>
+      </form>
+    </section>
     <footer>
     <h3>Find link to original page <a href="http://www.foodnetwork.com/recipes/alton-brown/creme-brulee-recipe-1916827">here</a></h3>
   </footer>
