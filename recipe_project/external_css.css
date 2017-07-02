@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+  background: darkorchid;
+}
+
+body ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+
+.ingredients-list {}
+
+ul.ingrediants-list {}
+
+header > img {
+  width: 125px;
+}
