@@ -10217,6 +10217,8 @@ var _currency2 = _interopRequireDefault(_currency);
 
 var _actions = __webpack_require__(91);
 
+var _flag = __webpack_require__(211);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -10304,6 +10306,7 @@ var Widget = function (_React$Component) {
           'Base Currency: ',
           baseCurrency
         ),
+        _react2.default.createElement(_flag.Flag, { name: baseCurrency }),
         _react2.default.createElement(
           'div',
           { className: 'currency-selector' },
@@ -23699,6 +23702,43 @@ module.exports = function(module) {
 	return module;
 };
 
+
+/***/ }),
+/* 211 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Flag = undefined;
+
+var _react = __webpack_require__(32);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var flagList = {
+  'CNY': 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/255px-Flag_of_the_People%27s_Republic_of_China.svg.png',
+  'GBP': 'http://www.crwflags.com/fotw/images/g/gb.gif',
+  'JPY': 'https://www.mapsofworld.com/images/world-countries-flags/japan-flag.gif',
+  'CAD': 'https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Flag_of_Canada.svg/1280px-Flag_of_Canada.svg.png',
+  'EUR': 'https://www.looksharpstore.co.nz/media/catalog/product/e/u/euro-flag_gif.jpg',
+  'USD': 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png'
+};
+
+var Flag = exports.Flag = function Flag(_ref) {
+  var name = _ref.name;
+
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement('img', { className: 'flag', src: flagList[name] })
+  );
+};
 
 /***/ })
 /******/ ]);

@@ -1,6 +1,7 @@
 import React from 'react';
 import Currency from './currency';
 import {selectCurrency} from '../actions';
+import {Flag} from './flag';
 
 window.selectCurrency = selectCurrency;
 
@@ -60,7 +61,7 @@ class Widget extends React.Component {
       <div>
         <h1>Currency Exchange Rates</h1>
         <h3>Base Currency: {baseCurrency}</h3>
-
+        <Flag name={baseCurrency}/> 
         <div className="currency-selector">
           Get Rates:
           {currencyOptions}
