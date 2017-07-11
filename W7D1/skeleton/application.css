@@ -10,6 +10,13 @@
   display: inline-block;
 }
 
+.currency-option:hover {
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
 .currency-option {
   float: right;
   padding-left: 5px;
